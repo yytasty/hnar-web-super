@@ -6,14 +6,14 @@ export const menuGroupList = computed(() => {
   return Object.keys(menuData.value).filter((i) => menuData.value[i]?.length)
 })
 
-export const menuGroup = ref("客服中心")
+export const menuGroup = ref("系统管理")
 
 export const menuData = ref({
-  客服中心: [],
-  销售管理: [],
-  报表中心: [],
-  生产中心: [],
-  安全监管: [],
+  // 客服中心: [],
+  // 销售管理: [],
+  // 报表中心: [],
+  // 生产中心: [],
+  // 安全监管: [],
   系统管理: [],
 })
 
@@ -49,11 +49,11 @@ export function ensureMenuData() {
 
 export function generateMenuData() {
   menuData.value = {
-    客服中心: [],
-    销售管理: [],
-    报表中心: [],
-    生产中心: [],
-    安全监管: [],
+    // 客服中心: [],
+    // 销售管理: [],
+    // 报表中心: [],
+    // 生产中心: [],
+    // 安全监管: [],
     系统管理: [],
   }
   nextTick(() => {

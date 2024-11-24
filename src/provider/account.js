@@ -20,7 +20,7 @@ export function loginByToken() {
 
 export async function loginByPassword(info) {
   localStorage.removeItem("token")
-  return fetch.post("/account/loginByPassword", info).then((res) => {
+  return fetch.post("/super/loginByPassword", info).then((res) => {
     message.success("登录成功")
     return afterLogin(res)
   })
